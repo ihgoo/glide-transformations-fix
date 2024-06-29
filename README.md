@@ -2,7 +2,7 @@ Glide Transformations
 ======================
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-glide--transformations-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1363)
 [![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/jp.wasabeef/glide-transformations/badge.svg)](https://search.maven.org/artifact/jp.wasabeef/glide-transformations)
+[![Release](https://jitpack.io/v/ihgoo/glide-transformations-fix.svg)](https://jitpack.io/#ihgoo/glide-transformations-fix)
 
 An Android transformation library providing a variety of image transformations for [Glide](https://github.com/bumptech/glide).
 
@@ -32,7 +32,7 @@ repositories {
 }
 
 dependencies {
-  implementation 'jp.wasabeef:glide-transformations:4.3.0'
+  implementation 'com.github.ihgoo:glide-transformations-fix:4.3.2'
   // If you want to use the GPU Filters
   implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
 }
