@@ -8,6 +8,18 @@ An Android transformation library providing a variety of image transformations f
 
 Please feel free to use this.
 
+# What new?
+This is rather a bug in glide-transformations library.
+The problem is here
+
+```
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+      RenderScript.releaseAllContexts();
+}
+```
+
+They are destroying all RS contexts, even if they don't belong to them. So the RS context of BlurView also gets destroyed
+
 
 #### Are you using Picasso or Fresco?
 [Picasso Transformations](https://github.com/wasabeef/picasso-transformations)  
@@ -28,7 +40,7 @@ Please feel free to use this.
 #### Gradle
 ```groovy
 repositories {
-  mavenCentral()
+  maven { url 'https://jitpack.io' }
 }
 
 dependencies {
